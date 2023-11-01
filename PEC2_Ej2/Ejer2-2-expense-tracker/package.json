@@ -1,0 +1,21 @@
+{
+  "name": "ejer2-2-expense-tracker",
+  "version": "1.0.0",
+  "description": "Keep track of income and expenses. Add and remove items and save to local storage",
+  "main": "app.js",
+  "scripts": {
+    "parcel:serve": "parcel index.html -p 8123 --target web --open",
+    "parcel:build": "parcel build index.html --target web --no-source-maps --no-cache",
+    "clean": "rimraf dist .cache .cache-loader .parcel-cache",
+    "dev": "npm-run-all clean parcel:serve",
+    "build": "npm-run-all clean parcel:build",
+    "start": "npm-run-all clean parcel:dev",
+    "parcel:dev": "parcel index.html -p 8123",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.1"
+  }
+}
